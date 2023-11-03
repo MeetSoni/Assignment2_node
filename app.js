@@ -134,6 +134,9 @@ app.get('/users', function(req, res) {
   res.send('respond with a resource');
 });
 
+app.get('*', function (req, res) {
+  res.render('error', { title: 'Error', message: 'Wrong Route' });
+});
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
