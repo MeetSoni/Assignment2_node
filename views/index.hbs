@@ -1,0 +1,42 @@
+
+<style>
+    /* Styling for the content container */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* Choose your desired background color */
+}
+
+/* Styling for the content box */
+.content-box {
+  background-color: #fff; /* Content box background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Stylish title */
+.stylish-title {
+  font-size: 36px;
+  color: #333; /* Title text color */
+  margin-bottom: 10px;
+}
+
+.content-box p {
+  color: #555; /* Text color */
+  font-size: 18px;
+}
+
+</style>
+<div class="content-container">
+  {{> header}}
+  <div class="content-box">
+    <h1 class="stylish-title">{{title}}</h1>
+    <p>Welcome to {{title}}</p>
+  </div>
+  {{> footer}}
+</div>
